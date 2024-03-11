@@ -1,0 +1,53 @@
+.custom-container {
+    margin: 3rem;
+    padding: 3rem;
+    font-family: cursive;
+    color: #a3a3a3;
+    border: 1px solid grey;
+    position: relative;
+    border-radius: 10px;
+    /* Add position relative to container */
+}
+
+.formheight{
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 10vh !important;
+}
+.custom-container::before {
+    content: 'FRONT-END DEVELOPER';
+    position: absolute;
+    /* left: 76rem; */
+    bottom: 13.2rem;
+    background-color: #323232;
+    padding: 0 10px;
+    color: #dddddd;
+}
+
+
+
+.custom-container p {
+    margin-top: 30px;
+    /* Adjust margin to create space for the title */
+}
+@media only screen and (max-width: 480px) {
+    .custom-container {
+        margin: 2.2rem;
+        padding: 1.2rem;
+        height: -3rem;
+        font-family: cursive;
+        color: #fffcfc;
+        border: 1px solid #fce9e973;
+        position: relative;
+        border-radius: 10px;
+    }
+    .custom-container::before {
+        content: 'FRONT-END DEVELOPER';
+        position: absolute;
+        /* left: 76rem; */
+        bottom: 9.2rem;
+        background-color: #fff9f9d6;
+        padding: 0 10px;
+        color: #454343;
+    }
+}   

@@ -1,0 +1,220 @@
+.outerCss {
+    /* border: 1px solid white;
+    background-color: #3e5aa90f;
+    padding: 20px;
+    padding: 9rem;
+    margin: 5rem;
+    border-radius: 10px;
+    box-shadow: rgb(255 232 232) 0px 1px 1px 0px inset, rgb(255 255 255 / 9%) 0px 50px 100px -20px, rgb(246 246 246 / 55%) 0px 30px 60px -30px;
+    width: 100%; Set width to 100% */
+}
+
+/* Header.css */
+/* Header.css */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 11rem;
+    position: relative;
+    /* Add position relative */
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    /* Add transition for smooth transform and z-index change */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Move the hovered item forward and add a scaling effect */
+nav ul li:hover {
+    transform: translateZ(50px) scale(1.1);
+    z-index: 1;
+    /* border: 1px solid white; */
+    padding: 0.6rem;
+    box-shadow: rgb(255 255 255 / 40%) 0px 30px 90px;
+
+}
+
+
+
+nav {
+    border: 1px solid #ffffff30;
+    padding: 1.5rem;
+    padding-inline: 7rem;
+    /* width: 56rem; */
+    box-shadow: rgb(126 126 126 / 15%) 0px 80px 107px 1px;
+    border-radius: 0.4rem;
+    margin-left: 29rem;
+}
+
+
+.headerNameCss {
+    position: relative;
+    top: 4rem;
+    left: 10rem;
+    /* right: 0rem; */
+    width: max-content;
+}
+
+.iconsCss {
+    color: aqua;
+}
+
+/* Responsive screen */
+
+@media (max-width: 1024px) {
+    .headerNameCss {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    nav {
+        padding-inline: 7.7rem;
+        margin-left: 0rem;
+
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 7rem;
+    }
+}
+
+@media (max-width:900px) {
+    .headerNameCss {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    nav {
+        padding-inline: 5.699999999999999rem;
+        margin-left: 0rem;
+
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .headerNameCss {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    nav {
+        padding-inline: 6rem;
+        margin-left: 0rem;
+
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 2rem;
+
+    }
+}
+
+@media (max-width:480px) {
+    .headerNameCss {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 0.6rem;
+
+    }
+}
+
+/* @media (max-width:400px) {
+    .headerNameCss {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 1rem;
+    }
+} */
+/* Media query for tablet screens */
+@media (max-width: 600px) {
+    .headerNameCss {
+        position: relative;
+        top: 0rem;
+        left: 1rem;
+    }
+
+    nav {
+        padding: 0.3rem;
+        margin-left: 0rem;
+
+        /* Adjust padding for small screens */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .outerCss {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .outerCss ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .outerCss li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outerCss a {
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+    }
+
+    .outerCss a.active {
+        color: aqua;
+    }
+
+    .outerCss a:hover {
+        color: aqua;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .iconsCss {
+        color: rgb(0, 0, 0);
+    }
+
+
+}

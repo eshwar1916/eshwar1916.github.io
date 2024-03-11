@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+/* border: 1px solid rgb(151, 151, 151); */
+
+body {
+  /* background-image: url(https://www.wallpaperflare.com/static/750/384/5/blue-black-blocks-wallpaper.jpg); */
+   background-color: black; 
+  color: rgb(255, 255, 255);
+  /* border: 1px solid rgb(151, 151, 151); */
+}
+
+input {
+  border: 1px solid #dddada;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 1rem;
+  /* width: 100%; */
+}
+
+form-group {
+  padding: 10px;
+}
+
+body {
+  font-family: 'Josefin Sans', cursive;
+}
+
+.scrolllist::-webkit-scrollbar {
+  width: 8px;
+  background-color: white;
+}
+
+.scrolllist::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.scrolllist::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: lightgray;
+}
+
+.scrolllist::-webkit-scrollbar:horizontal {
+  width: 5px;
+  height: 10px;
+  background-color: lightgray;
+}
+
+.mat-tab-group{
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+@media only screen and (max-width: 480px) {
+
+  body {
+    background-color: #000000d4;
+    color: rgb(255 255 255);
+    /* border: 1px solid rgb(151, 151, 151); */
+  }
+}
+/* Loginsigup.css */
+/* Add styles for the form fields here */
+.form-group {
+  position: relative;
+}
+
+/* Style the icon */
+.form-group svg {
+  position: absolute;
+  left: 11px;
+  top: 2.2rem;
+  transform: translateY(-50%);
+  color: #515151;
+}
+
+/* Adjust input padding to make space for the icon */
+.form-group input {
+  padding-left: 30px; /* Adjust as needed based on icon size */
+}
