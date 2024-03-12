@@ -105,9 +105,8 @@ nav {
     }
 
     nav {
-        padding-inline: 5.699999999999999rem;
+        padding-inline: 3.6999999999999993rem;
         margin-left: 0rem;
-
     }
 }
 
@@ -173,7 +172,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 780px) {
     .outerCss {
         position: fixed;
         bottom: 0;
