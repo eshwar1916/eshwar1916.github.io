@@ -6,14 +6,14 @@ import './Languages.css';
 
 function Languages() {
     const cards = [
-        { id: 1, name: 'Angular', description: 'A platform for building mobile and desktop web applications.', className: 'angular-card', imageUrl: 'assest/angular.webp' },
-        { id: 2, name: 'HTML', description: 'The standard markup language for creating web pages.', className: 'html-card', imageUrl: 'assest/html.jpg' },
-        { id: 3, name: 'TypeScript', description: 'A superset of JavaScript that adds optional static typing.', className: 'typescript-card', imageUrl: 'assest/typescript.svg' },
-        { id: 4, name: 'BootStrap', description: 'A platform for building mobile and desktop web applications.', className: 'bootstrap-card', imageUrl: 'assest/bootstrap.png' },
-        { id: 5, name: 'CSS', description: 'A platform for building mobile and desktop web applications.', className: 'css-card', imageUrl: 'assest/css.png' },
-        { id: 6, name: 'JavaScript', description: 'A platform for building mobile and desktop web applications.', className: 'js-card', imageUrl: 'assest/js.webp' },
-        { id: 7, name: 'MySQL', description: 'A platform for building mobile and desktop web applications.', className: 'sql-card', imageUrl: 'assest/MySQL-Logo.webp' },
-        { id: 7, name: 'JAVA', description: 'A platform for building mobile and desktop web applications.', className: 'java-card', imageUrl: 'assest/java.png' },
+        { id: 1, name: 'Angular', className: 'angular-card', imageUrl: './portfolio/assest/angular.png' },
+        { id: 2, name: 'HTML', className: 'html-card', imageUrl: './portfolio/assest/html.png' },
+        { id: 3, name: 'TypeScript', className: 'typescript-card', imageUrl: './portfolio/assest/typescript.svg' },
+        { id: 4, name: 'BootStrap', className: 'bootstrap-card', imageUrl: './portfolio/assest/bootStrap.png' },
+        { id: 5, name: 'CSS', className: 'css-card', imageUrl: './portfolio/assest/css.png' },
+        { id: 6, name: 'JavaScript', className: 'js-card', imageUrl: './portfolio/assest/js.webp' },
+        { id: 7, name: 'MySQL', className: 'sql-card', imageUrl: './portfolio/assest/MySQL-Logo.webp' },
+        { id: 7, name: 'JAVA', className: 'java-card', imageUrl: './portfolio/assest/java.png' },
     ];
 
     return (

@@ -6,25 +6,27 @@
     border: 1px solid grey;
     position: relative;
     border-radius: 10px;
-    /* Add position relative to container */
+    display: flex;
 }
 
-.formheight{
+.formheight {
     overflow-y: auto !important;
     overflow-x: hidden !important;
-    height: 10vh !important;
+    /* height: 37vh !important; */
 }
 .custom-container::before {
     content: 'FRONT-END DEVELOPER';
     position: absolute;
     /* left: 76rem; */
-    bottom: 13.2rem;
-    background-color: #323232;
+    /* bottom: 12.2rem; */
+    /* background-color: #323232; */
     padding: 0 10px;
-    color: #dddddd;
+    color: #ffffff;
 }
 
-
+.imgCsss{
+    height: 5rem;
+}
 
 .custom-container p {
     margin-top: 30px;
@@ -36,7 +38,7 @@
         padding: 1.2rem;
         height: -3rem;
         font-family: cursive;
-        color: #fffcfc;
+        color: grey;
         border: 1px solid #fce9e973;
         position: relative;
         border-radius: 10px;
@@ -45,9 +47,9 @@
         content: 'FRONT-END DEVELOPER';
         position: absolute;
         /* left: 76rem; */
-        bottom: 9.2rem;
-        background-color: #fff9f9d6;
+        /* bottom: 9.2rem; */
+        /* background-color: #fff9f9d6; */
         padding: 0 10px;
-        color: #454343;
+        color: #ffffff;
     }
 }   

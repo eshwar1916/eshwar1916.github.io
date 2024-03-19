@@ -7,6 +7,7 @@ import Header from '../Headers/Header';
 import About from '../About/About';
 import './Loginsigup.css';
 import Languages from '../LanguagesKnow/Languages';
+import Experience from '../Experience/Experience';
 
 export const Loginsigup = () => {
     const [data, setData] = useState({
@@ -34,13 +35,14 @@ export const Loginsigup = () => {
     }
 
     return (
-        <div className='wrapper'>
+        <div className='wrapper  '>
             {/* <div className='loginpage csssfont'> */}
             {/* <h2>SPEED CHECK</h2> */}
-            <form >
+            <form  className='scrolllist page-height'>
                 <Header />
                 <About />
                 <Languages />
+                <Experience />
             
 
             </form>
