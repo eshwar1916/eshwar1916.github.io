@@ -1,0 +1,289 @@
+/* General styles */
+.bgContainer {
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow */
+    height: 100vh;
+    background-image: "/assest/background.png";
+    /* backgroundImage: 'url(/assest/background.png)', */
+
+    /* Ensure container covers the viewport */
+}
+
+.css-5q2js3-MuiFormControl-root-MuiTextField-root {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    width: 59rem !important;
+    bottom: 1.5rem !important;
+    max-width: 100% !important;
+}
+
+.logoutcss {
+
+    height: 2rem;
+    background: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    color: #ce0909;
+    position: relative;
+    top: 1.9rem;
+    left: 0.1rem;
+    border-radius: 1rem;
+}
+
+.MuiDrawer-paper {
+    top: 8rem !important;
+    flex: 1 0 auto !important;
+    height: 50% !important;
+    display: flex !important;
+    outline: 0 !important;
+    z-index: 1200 !important;
+    position: fixed !important;
+    overflow-y: auto !important;
+    flex-direction: column !important;
+    border-top-right-radius: 9rem !important;
+    border-bottom-right-radius: 11rem !important;
+    -webkit-overflow-scrolling: touch;
+    background-color: darkred !important;
+    color: 'white' !important
+}
+
+.image {
+    position: relative;
+    /* width: 100px; */
+    left: 0%;
+    /* top: 0; */
+    transform: translateX(-50%);
+    bottom: 9.5rem;
+    animation: slide-in 2s ease forwards;
+    opacity: 0;
+}
+
+.animated-image {
+    height: 7rem;
+}
+
+.content {
+    padding: 0.5rem;
+    margin: 0 auto;
+    color: #a50000;
+    ;
+    border-radius: 2rem;
+}
+
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menulist {
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.liststart {
+    margin-left: 10px;
+    /* Adjust as needed */
+    cursor: pointer;
+    font-size: x-large;
+    color: #a50000;
+    ;
+}
+
+.listEnd {
+    font-size: medium;
+    color: #a50000;
+    ;
+}
+
+.listItemContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    /* Adjust as needed */
+}
+
+.listItem img {
+    height: 2rem;
+    /* Adjust image height as needed */
+}
+
+.listItem span {
+    margin-top: 0.5rem;
+    font-size: medium;
+    /* Adjust text top margin as needed */
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+
+.groceryImageMain {
+    display: flex;
+    overflow-x: hidden;
+    /* Hide overflow to prevent horizontal scroll */
+    display: flex;
+    overflow-x: hidden;
+}
+.secondmenu{
+    display: flex;
+    justify-content: space-around;
+}
+.groceryImage {
+    width: 300px;
+    height: 13rem;
+    padding: 1rem;
+    background-color: #35000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 28%);
+    margin-right: 16px;
+    transition: transform 0.1s ease-in-out;
+}
+.MuiList-root {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    list-style: none !important;
+}
+
+.menuButton {}
+
+.drawerPaper {
+    width: 3.8rem;
+    transition: width 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+/* Media query for tablet devices */
+@media (max-width: 1080px) {
+    .content {
+        width: 80%;
+        /* Adjust width for tablets */
+    }
+
+    .liststart {
+
+        font-size: x-large;
+
+    }
+
+    /* 
+    .listEnd {
+        font-size: x-large;
+        color: #a50000;
+        ;
+    } */
+
+    .image {
+        position: relative;
+        transform: translateX(-50%);
+        bottom: 8.8rem;
+        animation: slide-in 2s ease forwards;
+        opacity: 0;
+        /* Reduce image size for tablets */
+
+    }
+
+    .animated-image {}
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .content {
+        width: 90%;
+        /* Adjust width for mobile */
+    }
+
+    @media (max-width: 480px) {
+        .listItemContainer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            /* background-color: darkred; */
+            z-index: 1200;
+            justify-content: center; /* Center items horizontally */
+            padding: 1rem 0; /* Add padding for spacing */
+        }
+        
+        .listItem {
+            margin-right: 1rem; /* Adjust right margin for spacing between items */
+        }
+        .listItem span {
+            margin-top: 0.5rem;
+            font-size: medium;
+            display: none;
+            /* Adjust text top margin as needed */
+        }
+        .MuiList-root {
+            margin: 0 !important;
+            padding: 0 !important;
+            position: fixed !important;
+            list-style: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: fixed !important;
+            list-style: none !important;
+            box-shadow: rgb(0 0 0 / 19%) 0px 0px 12px;
+            border-top: 1px solid;
+            background: white;
+        }
+    }
+
+    .liststart {
+
+        font-size: x-large;
+
+    }
+
+    .listEnd {
+        font-size: x-large;
+
+    }
+
+    .image {
+
+        position: relative;
+        transform: translateX(-50%);
+        bottom: 8.8rem;
+        animation: slide-in 2s ease forwards;
+        opacity: 0;
+    }
+
+    .animated-image {}
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

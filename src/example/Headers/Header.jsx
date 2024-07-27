@@ -19,7 +19,7 @@ function Header() {
             <div className="row">
                 <div className="col-6">
                     <div className="headerNameCss">
-                        <h4>     <FontAwesomeIcon icon={faUser} style={{ color: 'aqua' }} />   VALLURU KAASIESHWAR</h4>
+                        <h4><FontAwesomeIcon icon={faUser} style={{ color: 'aqua' }} />VALLURU KAASIESHWAR</h4>
                     </div>
                 </div>
 
