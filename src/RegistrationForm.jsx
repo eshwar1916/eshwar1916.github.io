@@ -152,7 +152,7 @@ const RegistrationForm = () => {
                                 style={{ display: 'none' }}
                             />
                             <img src='./assest/cheflogin.png' style={{ height: '2rem' }} alt="Chef" />
-                            <span className='selectiontextcss'>CHEF</span>
+                            <span className=''>CHEF</span>
                         </div>
                         <div
                             className={`selectioncss ${selectedOption === 'customer' ? 'selected' : ''}`}
@@ -168,7 +168,7 @@ const RegistrationForm = () => {
                                 style={{ display: 'none' }}
                             />
                             <img src='./assest/customer.png' style={{ height: '2rem' }} alt="Customer" />
-                            <span className='selectiontextcss'>CUSTOMER</span>
+                            <span className=''>CUSTOMER</span>
                         </div>
                     </div>
                     <div className="wrapperclass scrolllist content-height">
@@ -304,6 +304,23 @@ const RegistrationForm = () => {
                                         </div>
                                     )}
                                 </FormControl>
+                                
+                                <Dialog
+                                    open={openDialog}
+                                    onClose={handleCloseDialog}
+                                    maxWidth="md"
+                                    fullWidth
+                                >
+                                    <DialogContent>
+                                        <img
+                                            src={previewUrl}
+                                            alt="Selected Preview"
+                                            style={{ width: '100%', height: '25rem' }} // Full-size image
+                                        />
+                                    </DialogContent>
+                                </Dialog>
+
+                                
                             </>
                         )}
                     </div>
