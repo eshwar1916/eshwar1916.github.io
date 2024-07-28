@@ -1,11 +1,10 @@
-
 .wrapperclass {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     align-items: center;
     width: min-content;
-    
+
 }
 
 @media (max-width: 550px) {
@@ -14,14 +13,16 @@
         flex-direction: column;
         align-items: center;
         width: min-content;
-    
+
     }
 }
+
 .btn {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
 }
+
 .selectioncss {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 0.5rem;
@@ -30,5 +31,10 @@
 }
 
 .selectioncss.selected {
-    background-color: #e0e0e0;
+    border-radius: 1rem;
+    border: 4px solid #4ac633;
+}
+.selectiontextcss{
+    position: relative;
+    bottom: 0.5rem;
 }

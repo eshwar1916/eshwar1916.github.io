@@ -22,8 +22,7 @@ const RegistrationForm = () => {
     const [formErrors, setFormErrors] = useState({});
     const [showPassword, setShowPassword] = useState(false);
 
-
-    const [formValues, setFormValues] = useState({
+    const initialValues = {
         firstName: '',
         lastName: '',
         email: '',
@@ -32,7 +31,11 @@ const RegistrationForm = () => {
         specialization: '',
         specificFoodItem: '',
         identityPicture: null
-    });
+    };
+
+    const [formValues, setFormValues] = useState(initialValues);
+
+
 
 
     const validationRules = {
@@ -98,8 +101,10 @@ const RegistrationForm = () => {
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
     };
-    const reset = () => {
-        this.formValues.reset();
+    const resetForm = () => {
+        setFormValues(initialValues);
+        setPreviewUrl(null);
+        setSelectedOption();
     }
     const successfullyregistered = () => {
         if (validate()) {
@@ -147,7 +152,7 @@ const RegistrationForm = () => {
                                 style={{ display: 'none' }}
                             />
                             <img src='./assest/cheflogin.png' style={{ height: '2rem' }} alt="Chef" />
-                            <span>CHEF</span>
+                            <span className='selectiontextcss'>CHEF</span>
                         </div>
                         <div
                             className={`selectioncss ${selectedOption === 'customer' ? 'selected' : ''}`}
@@ -163,7 +168,7 @@ const RegistrationForm = () => {
                                 style={{ display: 'none' }}
                             />
                             <img src='./assest/customer.png' style={{ height: '2rem' }} alt="Customer" />
-                            <span>CUSTOMER</span>
+                            <span className='selectiontextcss'>CUSTOMER</span>
                         </div>
                     </div>
                     <div className="wrapperclass scrolllist content-height">
@@ -303,7 +308,7 @@ const RegistrationForm = () => {
                         )}
                     </div>
                     <div className="btn">
-                        <Button variant="contained" type="submit" onClick={reset} sx={{ m: 1, width: '15ch' }} style={{ backgroundColor: '#9a1f1f' }}>
+                        <Button variant="contained" type="submit" onClick={resetForm} sx={{ m: 1, width: '15ch' }} style={{ backgroundColor: '#9a1f1f' }}>
                             RESET
                         </Button>
                         <Button variant="contained" type="submit" onClick={successfullyregistered} sx={{ m: 1, width: '15ch' }} style={{ backgroundColor: 'darkslategrey' }}>
