@@ -8,6 +8,11 @@ body {
 
 }
 
+.MuiPaper-root .MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthMd MuiDialog-paperFullWidth css-rnmm7m-MuiPaper-root-MuiDialog-paper {
+  width: auto !important;
+
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -24,6 +29,12 @@ body::before {
   z-index: -1;
 }
 
+.bgcontainer {
+  padding: 2rem;
+  background-color: white;
+  border: 5px solid #00000014;
+  border-radius: 1rem;
+}
 
 input {
   border: 1px solid #dddada;
@@ -95,8 +106,8 @@ body {
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
-  display: flex!important;
-  -webkit-flex-direction: column !important ;
+  display: flex !important;
+  -webkit-flex-direction: column !important;
   -ms-flex-direction: column !important;
   flex-direction: column !important;
   -webkit-align-items: center;
@@ -118,6 +129,7 @@ body {
   width: 15rem !important;
 
 }
+
 .css-vautga-MuiBackdrop-root {
   position: fixed;
   display: -webkit-box;
@@ -140,6 +152,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   z-index: 0 !important;
 }
+
 /* scrolllist starts */
 
 .scrolllist::-webkit-scrollbar {
@@ -165,15 +178,17 @@ body {
   background-color: lightgray;
 }
 
-.mat-tab-group{
+.mat-tab-group {
   font-family: 'Nunito Sans', sans-serif !important;
 }
+
 .content-height {
-  height: 75vh;
+  height: 57vh;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   /* margin: 16px; */
   overflow-y: auto;
   overflow-x: hidden;
 }
+
 /* scrolllist ends */
