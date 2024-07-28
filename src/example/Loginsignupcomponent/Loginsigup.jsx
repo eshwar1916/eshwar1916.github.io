@@ -3,7 +3,7 @@ import { TextField, FormControl, InputLabel, OutlinedInput, InputAdornment, Icon
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import './Loginsigup.css';
-
+import Reactparticleforlogin from '../../Reactparticleforlogin';
 export const Loginsigup = () => {
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
@@ -55,6 +55,7 @@ export const Loginsigup = () => {
 
     })
     return (
+        
         <div  className="form-container">
             <form className='wrapper' onSubmit={handleSubmit}>
                 <img src="./assest/Borcelle.png" alt="Grocery" className="animated-image" />

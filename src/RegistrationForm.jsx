@@ -7,6 +7,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import { useNavigate } from 'react-router-dom';
 import './App.css'
+import ReactParticles from './ReactParticles';
 
 
 const RegistrationForm = () => {
@@ -339,6 +340,7 @@ const RegistrationForm = () => {
                         >
                             <DialogContent>
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+
                                     <img src="./assest/correct.gif" />
                                     <h3>Hurry!!</h3>
                                     <h3>SUCCESSFULLY CREATED</h3>
@@ -347,6 +349,7 @@ const RegistrationForm = () => {
                                             GO BACK TO LOGIN
                                         </Button>
                                     </div>
+                                    <ReactParticles />
                                 </div>
                             </DialogContent>
                         </Dialog>
