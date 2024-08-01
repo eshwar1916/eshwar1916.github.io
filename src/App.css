@@ -182,6 +182,19 @@ body {
   font-family: 'Nunito Sans', sans-serif !important;
 }
 
+button.submitBtn{
+  background-color: rgb(153, 51, 51);
+  color: white;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+button.cancelBtn{
+  background-color: darkslategrey;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+
 .content-height {
   height: 57vh;
   border-top: 1px solid rgba(0, 0, 0, 0.1);

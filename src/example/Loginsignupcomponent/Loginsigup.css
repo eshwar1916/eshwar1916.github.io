@@ -15,7 +15,7 @@
     width: min-content;
     padding: 2rem;
     background-color: white;
-    box-shadow:0 28px 149px rgb(156 156 156 / 44%);
+    box-shadow: inset -1px -18px 0px 0px rgb(0 0 0 / 37%);
     z-index: 10000;
     border-radius: 1rem;
 }

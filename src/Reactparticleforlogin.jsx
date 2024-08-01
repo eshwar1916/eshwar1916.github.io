@@ -1,49 +1,30 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-
-const Reactparticleforlogin = () => {
+import './Reactparticlesforlogin.css'
+const ReactParticles = () => {
   const particlesConfig = {
     particles: {
       number: {
-        value: 80,
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-      },
-      color: {
-        value: '#ffffff',
+        value: 20,
       },
       shape: {
-        type: 'circle',
-      },
-      opacity: {
-        value: 0.5,
-        random: false,
-      },
+        type: 'image',
+        image: {
+            
+          src: './assest/as.png',
+          width: 100,
+          height: 100,
+        },
+        },
       size: {
-        value: 3,
-        random: true,
-      },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: '#ffffff',
-        opacity: 0.4,
-        width: 1,
+        value: 20,
       },
       move: {
         enable: true,
-        speed: 2,
-        direction: 'none',
-        random: false,
-        straight: false,
-        out_mode: 'out',
-        bounce: false,
+        speed: 1,
       },
     },
     interactivity: {
-      detect_on: 'canvas',
       events: {
         onhover: {
           enable: true,
@@ -53,57 +34,26 @@ const Reactparticleforlogin = () => {
           enable: true,
           mode: 'push',
         },
-        resize: true,
-      },
-      modes: {
-        grab: {
-          distance: 400,
-          line_linked: {
-            opacity: 1,
-          },
-        },
-        bubble: {
-          distance: 400,
-          size: 20,
-          duration: 2,
-          opacity: 8,
-          speed: 3,
-        },
-        repulse: {
-          distance: 200,
-        },
-        push: {
-          particles_nb: 4,
-        },
-        remove: {
-          particles_nb: 2,
-        },
       },
     },
     retina_detect: true,
   };
 
+  const containerStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'darkslategrey', // Light blue background color
+     // Ensure it stays behind other content
+  };
+
   return (
-    <div style={{ 
-      position: 'relative', 
-      width: '100%', 
-      height: '100vh', 
-      backgroundImage: `url('/assest/as.png')`, 
-      backgroundSize: 'cover', 
-      backgroundPosition: 'center' 
-    }}>
-      <Particles 
-        params={particlesConfig} 
-        style={{ 
-          position: 'absolute', 
-          top: 0, 
-          left: 0, 
-          width: '100%', 
-          height: '100%' 
-        }} 
-      />
+    <div style={containerStyle}>
+      <Particles params={particlesConfig} />
     </div>
   );
 };
 
-export default Reactparticleforlogin;
+export default ReactParticles;

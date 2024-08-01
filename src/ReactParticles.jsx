@@ -87,7 +87,7 @@ const ReactParticles = () => {
   console.log('Particles configuration:', particlesConfig);
 
   return (
-    <div style={{ position: 'absolute',     bottom: '4rem'      , left: 0, width: '100%', height: '100%' }}>
+    <div style={{ position: 'absolute', bottom: '49rem', left: 0, width: '100%', height: '100%' }}>
       {console.log('Rendering Particles component')}
       <Particles params={particlesConfig} />
     </div>

@@ -55,34 +55,32 @@ export const Loginsigup = () => {
 
     })
     return (
-        
-        <div  className="form-container">
-            <form className='wrapper' onSubmit={handleSubmit}>
-                <img src="./assest/Borcelle.png" alt="Grocery" className="animated-image" />
-                {/* <video width="600" controls>
-                    <source src="./assest/logovedio.mp4" type="video/mp4" />
-                </video> */}
-                <FormControl sx={{ m: 1, width: '30ch' }} variant="outlined" >
-                    <TextField
-                        id="outlined-user"
-                        label="User"
-                        placeholder="User *"
-                        multiline
-                        value={formValues.user}
-                        onChange={handleChange('user')}
-                        error={!!formErrors.user}
-                        helperText={formErrors.user}
-                    />
-                </FormControl>
-                <FormControl sx={{ m: 1, width: '30ch' }} variant="outlined">
-                    <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-                    <OutlinedInput
-                        id="outlined-adornment-password"
-                        type={showPassword ? 'text' : 'password'}
-                        value={formValues.password}
-                        onChange={handleChange('password')}
-                        endAdornment={
-                            <InputAdornment position="end">
+        <><><Reactparticleforlogin />
+            <div className="form-container">
+                <form className='wrapper' onSubmit={handleSubmit}>
+                    <img src="./assest/Borcelle.png" alt="Grocery" className="animated-image" />
+                    {/* <video width="600" controls>
+<source src="./assest/logovedio.mp4" type="video/mp4" />
+</video> */}
+                    <FormControl sx={{ m: 1, width: '30ch' }} variant="outlined">
+                        <TextField
+                            id="outlined-user"
+                            label="User"
+                            placeholder="User *"
+                            multiline
+                            value={formValues.user}
+                            onChange={handleChange('user')}
+                            error={!!formErrors.user}
+                            helperText={formErrors.user} />
+                    </FormControl>
+                    <FormControl sx={{ m: 1, width: '30ch' }} variant="outlined">
+                        <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                        <OutlinedInput
+                            id="outlined-adornment-password"
+                            type={showPassword ? 'text' : 'password'}
+                            value={formValues.password}
+                            onChange={handleChange('password')}
+                            endAdornment={<InputAdornment position="end">
                                 <IconButton
                                     aria-label="toggle password visibility"
                                     onClick={handleClickShowPassword}
@@ -91,30 +89,29 @@ export const Loginsigup = () => {
                                 >
                                     {showPassword ? <VisibilityOff /> : <Visibility />}
                                 </IconButton>
-                            </InputAdornment>
-                        }
-                        label="Password"
-                        error={!!formErrors.password}
-                    />
-                    <FormHelperText error={!!formErrors.password}>
-                        {formErrors.password}
-                    </FormHelperText>
-                </FormControl>
-                <div className="btn">
-                    <Button variant="contained" type="submit" sx={{ m: 1, width: '15ch' }} onClick={registerAccount} style={{ backgroundColor: 'darkslategrey' }}>
-                        Register
-                    </Button>
-                    <Button variant="contained" type="submit" sx={{ m: 1, width: '15ch' }} style={{ backgroundColor: '#993333' }}>
-                        Submit
-                    </Button>
-                </div>
+                            </InputAdornment>}
+                            label="Password"
+                            error={!!formErrors.password} />
+                        <FormHelperText error={!!formErrors.password}>
+                            {formErrors.password}
+                        </FormHelperText>
+                    </FormControl>
+                    <div className="btn">
+                        <Button variant="contained" type="submit" sx={{ m: 1, width: '15ch' }} onClick={registerAccount} style={{ backgroundColor: 'darkslategrey' }}>
+                            Register
+                        </Button>
+                        <Button variant="contained" type="submit" sx={{ m: 1, width: '15ch' }} style={{ backgroundColor: '#993333' }}>
+                            Submit
+                        </Button>
+                    </div>
 
-                <div className="">
-                    <a href="#" onClick={handleGoogleSignIn}>
-                        <img src="./assest/google.png" style={{ marginTop: '2rem' }} alt="Google Sign-In" />
-                    </a>                </div>
-            </form >
-        </div >
+                    <div className="">
+                        <a href="#" onClick={handleGoogleSignIn}>
+                            <img src="./assest/google.png" style={{ marginTop: '2rem' }} alt="Google Sign-In" />
+                        </a>                </div>
+                </form>
+            </div>
+        </><Reactparticleforlogin /></>
 
     );
 };

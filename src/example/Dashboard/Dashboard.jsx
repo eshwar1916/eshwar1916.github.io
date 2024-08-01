@@ -13,6 +13,9 @@ import { styled, css } from '@mui/system';
 import { Button, Modal, TextField, DialogContent as BaseModalContent } from '@mui/material';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 import clsx from 'clsx';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import '../../App.css'; // Relative path from Dashboard.jsx to App.css
 
 
 
@@ -77,9 +80,14 @@ const Dashboard = () => {
 
     return (
         <div className='bgContainer'>
-            <div className="content">
-                <img src="./assest/Borcelle.png" alt="Grocery" className="animated-image" />
-                <div className="listEnd">
+            <div className="navbar">
+                <img src="./assest/vedioicon2.gif" alt="Grocery" className="logo" />
+                <div className="logout-container">
+                    <ListItem button onClick={handleOpen} className="listItem">
+                        <PowerSettingsNewOutlinedIcon className='logout' />
+                    </ListItem>
+                </div>
+                <div className="nav-items">
                     <List className="listItemContainer">
                         <ListItem button onClick={profile} className="listItem">
                             <img src="./assest/chef.png" alt="Chef Icon" />
@@ -93,38 +101,35 @@ const Dashboard = () => {
                             <img src="./assest/user.png" alt="User Icon" />
                             <span>USER</span>
                         </ListItem>
-                        <ListItem button onClick={handleOpen} className="listItem">
-                            <PowerSettingsNewOutlinedIcon />
-                            <span>LOG OUT</span>
+                        <ListItem className="listItem">
+                            <button className="book-now-btn">Book</button>
                         </ListItem>
-                        <Modal
+                        {/* <ListItem button onClick={handleOpen} className="listItem logoutbtncss">
+                            <PowerSettingsNewOutlinedIcon className='logout' />
+    
+                        </ListItem> */}
+                        <Dialog
                             open={open}
                             onClose={handleClose}
-                            slots={{ backdrop: StyledBackdrop }}>
-                            <ModalContent sx={style}>
-                                <p id="parent-modal-description" className="modal-description">
-                                    ARE YOU SURE TO LOGOUT
-                                </p>
-                                <div style={{ display: 'flex' }}>
-                                    <Button
-                                        variant="contained"
-                                        type="submit"
-                                        sx={{ m: 1, width: '15ch' }}
-                                        style={{ backgroundColor: 'darkslategrey' }}
-                                        onClick={handleClose}>
-                                        CANCEL
-                                    </Button>
-                                    <Button
-                                        variant="contained"
-                                        type="submit"
-                                        sx={{ m: 1, width: '15ch' }}
-                                        style={{ backgroundColor: '#993333' }}
-                                        onClick={logout}>
-                                        LOGOUT
-                                    </Button>
+                            maxWidth="md" >
+                            <DialogContent >
+                                <div style={{ width: 'auto' }}>
+                                    <p id="parent-modal-description" className="modal-description">
+                                        ARE YOU SURE TO LOGOUT
+                                    </p>
+                                    <div style={{ display: 'flex', justifyContent: "space-between" }}  >
+                                        <Button className="cancelBtn"
+                                            onClick={handleClose}>
+                                            CANCEL
+                                        </Button>
+                                        <Button className="submitBtn"
+                                            onClick={logout}>
+                                            LOGOUT
+                                        </Button>
+                                    </div>
                                 </div>
-                            </ModalContent>
-                        </Modal>
+                            </DialogContent>
+                        </Dialog>
                     </List>
                 </div>
             </div>
@@ -169,7 +174,7 @@ const Dashboard = () => {
                         position: 'relative',
                         bottom: '1.2rem',
                         left: '0.3rem',
-                    }}>Available Chef</span>
+                    }}>AVALIABLE</span>
                 </div>
             </div>
             <div className='groceryImageMain'>
